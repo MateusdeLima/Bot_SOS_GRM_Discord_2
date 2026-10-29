@@ -1,0 +1,10 @@
+# Configuração do Bot GRM
+# Renomeie este arquivo para .env e preencha com suas credenciais
+
+# Token do bot Discord
+# Obtenha em: https://discord.com/developers/applications
+DISCORD_TOKEN=seu_token_do_discord_aqui
+
+# Chave da API do Google Gemini
+# Obtenha em: https://makersuite.google.com/app/apikey
+GEMINI_API_KEY=sua_chave_api_do_gemini_aqui

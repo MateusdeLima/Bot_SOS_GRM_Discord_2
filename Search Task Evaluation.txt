@@ -1,0 +1,577 @@
+﻿* ‘Search Task Evaluation
+(SQE)
+
+
+
+
+Documento formulado a partir de alinhamentos, com base na SOP, anotações pessoais e fixados do Discord 
+
+
+
+
+* O que é a tarefa?
+
+
+A tarefa consiste em avaliação de relevância de pesquisa a fim de melhorar o desempenho do algoritmo e avaliar a precisão do mecanismo de busca.
+
+
+* Por que pulamos algumas palavras-chave (skip)?
+
+
+Para melhorar a acurácia da marcação, nem sempre avaliamos todas as palavras-chave, atuamos também removendo algumas palavras confusas e amplas demais, além das divergências.
+
+
+
+
+
+
+Dicas importantes para a marcação!
+
+
+
+
+1. Utilize as diretrizes e exemplos como um guia durante o processo de marcação.
+
+2. Ao realizar as marcações confie em seu julgamento e compreensão das diretrizes, mesmo para palavras-chave que não estejam explicitamente abordadas nas diretrizes.
+
+
+   3. Valorizamos sua percepção; se percebermos que as diretrizes entram em conflito com as políticas locais, estamos abertos a discussões e ajustes.
+
+
+   4. Não hesite em esclarecer dúvidas quando necessário. Nessa atividade, alcançar um consenso dentro da equipe é fundamental!
+
+
+   5. Pense como um usuário da plataforma. Considere o que você gostaria de ver na sua pesquisa.
+
+
+
+
+
+
+
+
+Boa análise! 🙂
+Relevâncias Graduais:
+
+
+Relevante 
+(Produtos que correspondem a pesquisa)
+
+
+Meio-relevante
+(Produtos que não correspondem especificamente mas fazem sentido)
+
+
+Irrelevante
+(Produtos que não correspondem a pesquisa)
+
+
+
+
+
+
+Diretrizes para marcação de relevância gradual:
+
+
+   * Item
+
+Relevante: O próprio item ou kits que contenham o item.
+Meio-relevante: Itens com função similar (substituto), acessórios para o item.
+Irrelevante: Itens com nenhuma relação com a keyword.
+
+
+      * Marca
+
+
+Relevante: Itens da marca procurada (sem considerar autenticidade).
+Meio-relevante: Marcas concorrentes que produzem produtos similares à marca pesquisada.
+Irrelevante: Itens de marcas não relacionadas à pesquisa.
+
+
+      * Item + Marca
+
+
+Relevante: Itens e marcas corretos.
+Meio-relevante: Item correto de outra marca, ou acessórios para o item.
+Irrelevante: Itens não relacionados, acessórios para itens de outras marcas.
+
+
+      * Item + Atributo
+
+
+Relevante: Item e atributo corretos.
+Meio-relevante: Item correto com atributo diferente; acessórios para o item.
+Irrelevante: Itens não relacionados.
+
+
+      * Item + Marca + Atributo
+
+
+Relevante: Item, marca e atributos corretos.
+Meio-relevante: Item correto mas com marca ou atributo diferente; acessórios para o item.
+Irrelevante: Itens não relacionados.
+
+
+      * Item + Idade
+
+
+Relevante: Item correto para idade correta.
+Meio-relevante: Item de função similar ou acessórios para o item.
+Irrelevante: Item para outras idades ou itens não relacionados.
+
+
+      * Item + Gênero
+
+
+Relevante: Itens corretos para o gênero mencionado ou produtos especificados como unissex.
+Meio-relevante: Itens com função similar (substituto) para o gênero correto; acessórios para o item.
+Irrelevante: Item para outro gênero ou itens não relacionados.
+
+
+
+
+
+
+
+
+Bad Cases
+
+
+      * Resumo:
+
+
+São itens que não são relevantes para a busca. Identificamos esses itens e pontuamos as inconsistências no anúncio, seja relacionado à imagem, título, categoria ou marca.
+Após a conclusão das marcações, compilamos os dados de todos os Bad Cases, identificamos e tomamos medidas para que os sellers possam corrigir os erros encontrados.
+
+
+      * Como marcamos?
+
+
+Marcamos erros apenas em itens relacionados e classificados como “Meio-relevante” ou “Irrelevante”. 
+
+
+
+
+
+
+ATENÇÃO: Ao classificar um item como meio-relevante ou irrelevante, certifique-se de que não há nenhum erro com o anúncio. Se identificar alguma questão (inconsistência de imagem, titulo, etc.) sinalize diretamente na marcação.
+
+
+
+
+Motivos para marcação Meio-relevante e Irrelevante
+
+
+
+
+      * Wrong Item (item errado)
+Quando o item mostrado é diferente da palavra-chave.
+
+
+      * Accessories for the Keyword (acessórios para a palavra-chave)
+Quando o item mostrado é acessório para o item procurado (deve ser marcado junto com “Wrong item”)
+
+
+      * Wrong Brand (marca errada)
+Quando o item mostrado é de marca diferente da citada pela palavra-chave.
+
+
+      * Wrong Model (modelo errado)
+Quando o item mostrado é um modelo ou número de série diferente do citado pela palavra-chave. Vale lembrar que o modelo é um título dado pela marca ou fabricante, logo, será mais comum em casos de eletrônicos ou itens de moda mais famosos.
+
+
+      * Wrong Target Group (grupo-alvo errado)
+Quando o item mostrado é para o gênero, idade, ou qualquer grupo diferente do especificado na palavra-chave.
+
+
+      * Wrong Color (cor errada)
+Quando o item mostrado é de cor diferente da citada pela palavra-chave.
+
+
+      * Wrong Style/Design (Estilo/design errado)
+Quando o item mostrado tem estilo ou design errado/diferente do solicitado na palavra-chave. O estilo é geralmente um adjetivo usado pelo usuário para descrever o item que está sendo buscado e não o nome do produto dado pela marca.
+
+
+      * Wrong Measure (medida/tamanho errado)
+Quando o item mostrado tem medida ou tamanho diferente do citado na palavra-chave.
+
+
+      * Wrong IP (Propriedade Intelectual errada)
+Quando o item mostrado é de uma propriedade intelectual diferente da citada. Propriedade intelectual são criações, como obras literárias, desenhos, personagens, séries, filmes, etc.
+
+
+      * Scam Listing (produto frauduloso)
+Quando o item mostrado parece falso, ou seja, o produto anunciado é diferente da foto, o preço é baixo demais para aquele produto ou os compradores receberam algo diferente do anunciado.
+
+
+      * Mistery Box (caixa misteriosa)
+Quando o item mostrado é um sorteio e o usuário faz a compra sem saber exatamente o que vai receber.
+
+
+      * Others (outros)
+Outros atributos não especificados pelos casos já mencionados. Deve ser inserido manualmente o motivo da marcação. Motivos para marcar Others dentro da keyword: 
+      * Wrong Material: para produtos de material diferente do especificado na palavra-chave.
+      * Wrong Function: para itens com função diferente da solicitada.
+      * Wrong Fragrance/Flavour: para itens com fragrância ou sabor diferente da solicitada.
+      * Wrong Item: para itens diferentes do especificado na keyword.
+      * Wrong Attribute: utilizado somente em casos específicos de itens corretos com atributos errados. Ex.: quando a KW solicitada é “creatina pura” e aparecem itens de “creatina monohidratada”, ou quando a KW é “semente de girassol” e aparecem sementes de outros tipos de flores. OBS.: Sempre checar antes de aplicar esta marcação.
+
+
+
+
+
+
+SKIP
+
+
+      * O que é?
+
+
+Ação tomada em palavras que não devem ser marcadas, nós ignoramos estas palavras, ou seja, pulamos (skip).
+
+
+      * Quando tomamos esta ação?
+
+
+Algumas palavras podem causar confusão na hora da marcação, então removemos palavras que não sabemos como marcar, ou não trazem nenhuma informação nova e só acabam por causar divergência entre marcadores. 
+Tomamos esta ação a fim de manter uma plataforma limpa, com resultados claros e objetivos de pesquisa. 
+
+
+
+
+ Motivos para SKIP(Lemrbrando que só podemos combinar esses motivos de SKIP, com a ação de SKIP então sempre que tiver um motivo como esse será junto com a palavra SKIP)
+  
+      * Broad Keyword                                                                        
+  
+Para palavras com vários significados/muito ampla. 
+Ex.: “blusa’, “kit banheiro ","vestido estiloso",”saia evangélica”,”coisas para quarto”,”peça de janela”,"acessórios de festa da Turma da Mônica", "kit festa infantil", "kit festa Cinderela", "decoração de festa da Luna", "decoração de casamento", "festa de 15 anos", "lembrancinha de batizado" etc.  
+Palavras assim não costumam ter a intenção clara, por isso pulamos. 
+
+
+      * Attribute only
+
+
+Palavras que correspondem apenas ao atributo, sem especificação de produto. Ex.: “nivea noturno”, “sétima geração”, “para cabelo”, etc.
+
+
+      * Celebrities/Fictional Characters
+Palavras que correspondem a personagens ou famosos. Ex.: “lana del rey”, “peppa pig”, “harry potter”, “queen”, “emicida”
+
+
+
+
+Palavras soltas de país ou nacionalidade
+
+
+      * Seller/Store Name
+
+Palavras que correspondem ao nome de lojas ou vendedores (oficiais e não oficiais, tendo em mente que lojas não são produtos). Ex.: “lovito”, “maquiagem
+ choice”, “Sephora”, etc.
+
+         * Typo
+Palavras com erros de digitação que podem confundir a intenção do usuário, mudando o significado ou tornando a palavra irreconhecível. Ex.: “bitas” (não dá pra saber se a intenção seria botas, batas…) 
+OBS.: Não serve para palavras onde a intenção é compreensível (como: “Appl iphne”)
+
+
+         * Brands without Products
+Para marcas que não são nem vendem um produto em si, como Tik Tok, Facebook, Shopee, etc.
+
+
+         * Keywords with special characters
+Quando a palavra tem muitos caracteres e não dá para entender a intenção de busca. Ex: “c4m*s/@”
+
+Keywords that don't match a product
+Palavras que não correspondem a um produto. Ex.: “casa”, “nariz”, “abdômen”, “amor”, “parede”, etc.
+
+
+         * Products that are not sold on the platform
+Palavras que correspondem a um produto que não é vendido na plataforma. Ex.: “cinzeiro”, “plantas vivas”, “peixe”, “aranha”, etc.
+
+
+         * Prohibited or Restricted Products
+Palavras que correspondem a um produto proibido ou restrito na plataforma. Ex.: “arma de airsoft”, “uniforme exército brasileiro”, “vape”, “Camisa Seleção réplica”, etc.
+
+
+         *   Keywords with no results found 
+Palavras sem resultados de busca. Ex.: “xyyy”, “copo medidor cookies”, etc.
+
+
+         * Missing Data Information
+Para palavras com itens que não contenham informações.
+
+
+
+
+
+
+Alinhamentos de Marcação
+         * Os refrigeradores têm a mesma função de ar condicionado e ventiladores, mas caso não seja o produto específico da KW, marcamos como Meio-Relevante e Wrong Item.
+
+
+         * Smartwatch não é considerado relógio digital por possuir mais funções que os relógios convencionais. Com exceção dos primeiros modelos, que mostram somente a hora, batimentos e saturação (estes sim podem ser considerados relógios digitais), marcamos Smartwatch como Meio-Relevante para KWs de relógio. Headsets são avaliados da mesma forma quando a KW for Fone de ouvido.
+
+
+         * Quando uma KW relacionada a um item fashion mostra os produtos correspondentes mas de tamanho infantil (sem especificação da idade na palavra-chave), marcamos como Meio-Relevante e Wrong Target Group. O mesmo acontece quando a KW refere-se a um produto infantil e aparecem produtos adultos, mesmo que não esteja especificada a idade na busca.
+
+
+         * “Feminino” refere-se ao tamanho adulto, enquanto “Menina” corresponde ao tamanho infantil. O mesmo serve para “Masculino” e “Menino”.
+
+
+         * Quando vier uma KW em que algum item não for da marca/material ou algo do tipo que esteja sendo solicitado, mas ainda sim for o item, consideramos como Meio-Relevante e especificamos o motivo em Others.
+
+
+         * Quando a KW conter a palavra CAMISA, podemos considerar camisas sociais, polo e camiseta de time (pois sabemos que é hábito chamar de camisa qualquer veste superior).
+
+
+         * Podemos dar SKIP em KWs que contenham a palavra BLUSA e todas suas variações (seja blusa de frio, blusa academia, blusinha, blusa de moletom, blusa).
+
+
+         * Quando a KW for MOLETOM, podemos considerar como Relevante os agasalhos, conjuntos e partes de cima. As partes de baixo nós vamos considerar como Meio-Relevante.
+
+
+         * Quando a KW for SANDÁLIA, papetes serão considerados como Meio-Relevante e Wrong Style/Design.
+
+
+         * Se precisamente mentira.Podemos dar SKIP em KWs como: 
+- kit banheiro (e afins)
+- decoração (sala, quarto, cozinha)
+- brinquedos para bebê e geral, 
+- maternidade, 
+- ferramentas, 
+- sex shop, 
+- coisas de bebês,  
+- de sala, cozinha, 
+- quarto, 
+- cantinho do café, 
+- bts, 
+- vestido inspiração, 
+- organizador para banheiro com gavetas, 
+- Saia Jeans Evangélica, 
+- Futsal, 
+- peça de janela, 
+- kit mãe e filho 
+- Bolacha/biscoito
+
+
+            * Palavras como BISCOITO e BOLACHA nós consideramos como atributos para KW, por serem amplas e gerarem opiniões divergentes. Caso apareçam sem especificação, serão consideradas como SKIP e a razão é Attribute Only.
+
+
+
+
+
+
+
+
+
+
+Links de acesso e materiais de apoio
+
+
+
+
+Plataforma SQE:
+            * https://sqe.search.shopee.io/?project_id=4676&region=BR
+
+
+
+
+Glossário de SKIP:
+            * https://docs.google.com/spreadsheets/d/1IwcKKzOcPk7CAANzWrk4k-SPSKnOSQCGfkx_dh2Th8w/edit?gid=0#gid=0
+
+
+
+
+SOP:
+            * Cópia de [BR] SOP - Search Relevance Marking Guideline
+
+
+
+
+Itens proibidos e restritos:
+            * https://help.shopee.com.br/portal/4/article/76226-[Pol%C3%ADticas]-Pol%C3%ADtica-de-Produtos-Proibidos-e-Restritos
+
+
+
+
+Dúvidas de Search:
+            *  Dúvidas - Search  - BR Team
+
+
+
+
+Fashion Guideline:
+            *  [BR] GRM - Fashion Guideline
+
+
+
+
+Slides de treinamento:
+            *  Local BR GRM Training.pptx 
+            *  [BR] New GRM Process.pptx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Motivos para skip
+
+
+• Broad keyword - Para palavras com vários significados/muito ampla.
+
+
+• Attribute only - Quando só for atributo.
+
+
+• Celebrities/Fictional Characters - Para personagens e famosos.
+
+
+• KW of Country or Nationality - Para palavras soltas de país ou nacionalidade.
+
+
+• Seller/Store Name - Nome de sellers.
+
+
+• Typo - Para erros de digitação.
+
+
+• Brands without Products - Marcas sem produtos. (para marcas que não vendem um item em si, tipo facebook, tiktok)
+
+
+• Keywords with special characters - Quando tem muitos caracteres especiais e não dá para entender a intenção da busca.
+
+
+•  - Palavras que não batem com produtos – Exemplo: ''Limpeza de pele'' ''Terapia''
+
+
+• Products that are not sold on the platform - Produtos que não vendem na shopee.
+
+
+• Prohibited or Restricted Products – Produtos proibidos ou restritos.
+
+
+• Keywords with no results found - Palavras-chave sem resultado encontrado.
+
+
+• Missing Data Information - Palavras com itens sem informações.
+
+
+Motivos para marcar others dentro da kw:
+
+
+Wrong function
+
+
+Wrong material 
+
+
+Wrong fragrance/flavor
+
+
+wrong item
+
+
+Outros motivos para Skip 
+
+
+pode dar skip em blusa  / kit banheiro (e afins) / decoração (sala, quarto, cozinha)/ brinquedos para bebê e geral, maternidade, ferramentas, sex shop, coisas de bebes,  de sala, cozinha, quarto, cantinho do cafe, bts, vestido inspiração, organizador para banheiro com gavetas, Saia Jeans Evangelica, Futsal, peça de janela, kit mae e filho - skip
+
+
+Quando são muito amplas, não as analisamos pq não tem consenso. Por exemplo: "acessórios de festa da Turma da Mônica", "kit festa infantil", "kit festa Cinderela", "decoração de festa da Luna", "decoração de casamento", "festa de 15 anos", "lembrancinha de batizado" etc.
+
+
+Para analisar, as kw precisam ser mais específicas, levando todos a marcar da mesma forma. Por exemplo: "topo de bolo da Frozen", "balão vermelho", "toalha de mesa da Turma da Mônica", "tubetes da Minnie". (editado)
+[17:43]
+Como a Vi já foi embora, colei o textinho da @Karla Martins pra deixar salvo aqui ^^

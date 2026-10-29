@@ -1,0 +1,223 @@
+REGRAS PARA INTELIGÊNCIA ARTIFICIAL - ASSISTENTE DE TAREFA SHOPEE
+================================================================
+
+REGRAS PARA ACESSÓRIOS
+==========================
+
+ACESSÓRIOS SÃO PRODUTOS EXTRAS que complementam o item principal (ex: capinha, película, carregador para celular)
+
+NÃO SÃO ACESSÓRIOS itens que já vêm de fábrica (ex: tela, display, bateria para celular)
+
+SE A KW JÁ É ACESSÓRIO: Qualquer produto diferente = "Irrelevante > Wrong Item (item errado)"
+
+ACESSÓRIOS OBRIGATÓRIO: Acessórios SEMPRE devem ter 2 marcações:"Wrong Item" E  "Accessories for the Keyword"
+
+EXEMPLOS DE ACESSÓRIOS
+==========================
+
+kw: "samsung s24" → produto: "capinha samsung s24" → "Meio Relevante > Accessories for the Keyword (acessórios para a palavra-chave), Wrong Item (item errado)"
+
+kw: "samsung s24" → produto: "tela samsung s24" → "Irrelevante > Wrong Item (item errado)" - não é acessório
+
+kw: "capinha" → produto: "película" → "Irrelevante > Wrong Item (item errado)" - kw já é acessório
+
+REGRAS PARA MATERIAL
+========================
+
+MATERIAL ESPECIFICADO NA KW: Se a kw especifica material (ex: "jaqueta jeans", "camisa algodão"), analisar se o produto retornado tem material diferente
+
+MATERIAL DIFERENTE: Se o produto é do mesmo tipo mas material diferente = "Meio Relevante > Wrong Material (material errado)"
+
+MATERIAL CORRETO: Se o produto é do mesmo tipo e material = "Relevante"
+
+EXEMPLOS DE MATERIAL
+========================
+
+kw: "jaqueta jeans" → produto: "casaco moletom" = "Meio Relevante > Wrong Material (material errado), Wrong Style/Design (Estilo/design errado)"
+
+kw: "camisa algodão" → produto: "camisa poliéster" = "Meio Relevante > Wrong Material (material errado)"
+
+kw: "calça jeans" → produto: "calça jeans" = "Relevante"
+
+REGRAS PARA PRODUTOS COM IP (PROPRIEDADE INTELECTUAL)
+========================================================
+
+kw: "chinelo carros" → produto: "chinelo homem aranha" → "Meio Relevante > Wrong IP (Propriedade Intelectual errada)"
+
+kw: "chinelo homem aranha" → produto: "chinelo liso" → "Meio Relevante > Wrong Style/Design (Estilo/design errado)"
+
+kw: "chinelo carros" → produto: "chinelo carros" → "Relevante"
+
+REGRAS PARA MÚLTIPLOS MOTIVOS
+==================================
+
+MÚLTIPLOS MOTIVOS: Uma resposta pode conter mais de um motivo de divergência
+
+ANÁLISE COMPLETA: Analisar material, estilo, tipo, IP e outros atributos simultaneamente
+
+EXEMPLO COMPLEXO: kw: "jaqueta jeans" → produto: "casaco moletom" = "Meio Relevante > Wrong Material (material errado), Wrong Style/Design (Estilo/design errado)"
+
+REGRAS PARA CATEGORIAS ESPECÍFICAS
+======================================
+
+VESTUÁRIO:
+
+kw: "camisa" → produto: "calça" → "Meio Relevante > Wrong Item (item errado)"
+
+kw: "sapato" → produto: "camisa" → "Irrelevante > Wrong Item (item errado)"
+
+kw: "roupa" → produto: "camisa" → "Relevante"
+
+ALIMENTOS:
+
+kw: "maçã" → produto: "laranja" → "Meio Relevante > Wrong Item (item errado)"
+
+kw: "carne" → produto: "maçã" → "Irrelevante > Wrong Item (item errado)"
+
+kw: "fruta" → produto: "maçã" → "Relevante"
+
+ELETRODOMÉSTICOS:
+
+kw: "ventilador" → produto: "mousepad" → "Irrelevante > Wrong Item (item errado)"
+
+kw: "ventilador" → produto: "ventilador de mesa" → "Relevante"
+
+kw: "ar condicionado" → produto: "ventilador" → "Meio Relevante > Wrong Item (item errado)"
+
+REGRAS PARA RESPOSTA OBJETIVA
+==================================
+
+A IA faz toda a análise internamente (verificação de políticas, análise do documento, etc.)
+
+RESPONDE APENAS com a marcação final no formato padronizado
+
+NÃO MOSTRA o processo de análise ou verificação
+
+EXEMPLO CORRETO: "Irrelevante > Wrong Item > item retornado PROIBIDO"
+
+EXEMPLO INCORRETO: "Primeiro, verificar se a kw... Agora, analisar... Portanto..."
+
+IMPORTANTE
+==============
+
+NUNCA invente motivos: Use APENAS os motivos específicos listados no documento
+
+RESPOSTA OBJETIVA: Apenas a marcação final, sem processo de análise
+
+POLÍTICAS PRIMEIRO: Sempre verificar políticas proibidas ANTES de qualquer análise
+
+FORMATO EXATO: Usar exatamente os motivos e formatação especificados
+
+MÚLTIPLOS MOTIVOS: Quando aplicável, incluir todos os motivos de divergência encontrados
+
+REGRAS ESPECÍFICAS PARA PRODUTOS COM IP
+=============================================
+
+Se a kw pede um IP específico e retorna o mesmo produto com IP diferente = Meio Relevante > Wrong IP
+
+Se a kw pede um IP específico e retorna o mesmo produto sem IP (liso) = Meio Relevante > Wrong Style/Design
+
+Se a kw pede um IP específico e retorna o mesmo produto com o mesmo IP = Relevante
+
+Se a kw pede um produto e retorna produto diferente = Irrelevante > Wrong Item
+
+REGRAS ESPECÍFICAS PARA ACESSÓRIOS
+========================================
+
+ACESSÓRIOS SÃO PRODUTOS EXTRAS que complementam o item principal (ex: capinha, película, carregador para celular)
+
+NÃO SÃO ACESSÓRIOS itens que já vêm de fábrica (ex: tela, display, bateria para celular)
+
+QUANDO FOR ACESSÓRIO: Sempre marcar "Meio Relevante > Accessories for the Keyword (acessórios para a palavra-chave) e Wrong Item (item errado)"
+
+SE A KW JÁ É ACESSÓRIO: Qualquer produto diferente = "Irrelevante > Wrong Item (item errado)"
+
+REGRAS ESPECÍFICAS PARA MATERIAL
+======================================
+
+MATERIAL ESPECIFICADO NA KW: Se a kw especifica material (ex: "jaqueta jeans", "camisa algodão"), analisar se o produto retornado tem material diferente
+
+MATERIAL DIFERENTE: Se o produto é do mesmo tipo mas material diferente = "Meio Relevante > Wrong Material (material errado)"
+
+MATERIAL CORRETO: Se o produto é do mesmo tipo e material = "Relevante"
+
+PRODUTO DIFERENTE: Se o produto é completamente diferente = "Irrelevante > Wrong Item (item errado)"
+
+REGRAS PARA MÚLTIPLOS MOTIVOS
+===================================
+
+MÚLTIPLOS MOTIVOS: Uma resposta pode conter mais de um motivo de divergência
+
+ACESSÓRIOS OBRIGATÓRIO: Acessórios SEMPRE devem ter 2 marcações: "Accessories for the Keyword" E "Wrong Item"
+
+ANÁLISE COMPLETA: Analisar material, estilo, tipo, IP e outros atributos simultaneamente
+
+FORMATO: "Meio Relevante > [motivo1], [motivo2]" ou "Irrelevante > [motivo1], [motivo2]"
+
+ANÁLISE ESPECÍFICA PARA IP
+===============================
+
+Se kw tem IP (ex: "chinelo carros") e produto é o mesmo tipo mas IP diferente = Meio Relevante > Wrong IP
+
+Se kw tem IP (ex: "chinelo carros") e produto é o mesmo tipo mas sem IP (liso) = Meio Relevante > Wrong Style/Design
+
+Se kw tem IP (ex: "chinelo carros") e produto é o mesmo tipo com mesmo IP = Relevante
+
+Se kw tem IP mas produto é tipo diferente = Irrelevante > Wrong Item
+
+ANÁLISE ESPECÍFICA PARA ACESSÓRIOS
+========================================
+
+Se kw pede produto principal e retorna acessório = Meio Relevante > Accessories for the Keyword (acessórios para a palavra-chave) e Wrong Item (item errado)
+
+Se kw pede produto principal e retorna item de fábrica = Irrelevante > Wrong Item (item errado)
+
+Se kw já é acessório e retorna produto diferente = Irrelevante > Wrong Item (item errado)
+
+ANÁLISE ESPECÍFICA PARA MATERIAL
+======================================
+
+Se kw especifica material (ex: "jaqueta jeans") e produto é mesmo tipo mas material diferente = Meio Relevante > Wrong Material (material errado)
+
+Se kw especifica material e produto é mesmo tipo e material = Relevante
+
+Se kw especifica material mas produto é tipo diferente = Irrelevante > Wrong Item (item errado)
+
+ANÁLISE PARA MÚLTIPLOS MOTIVOS
+====================================
+
+EXEMPLO COMPLEXO: kw: "jaqueta jeans" → produto: "casaco moletom"
+
+Material diferente: jeans vs moletom = Wrong Material
+
+Estilo diferente: jaqueta vs casaco = Wrong Style/Design
+
+Resposta: "Meio Relevante > Wrong Material (material errado), Wrong Style/Design (Estilo/design errado)"
+
+EXEMPLO ACESSÓRIO: kw: "samsung s24" → produto: "capinha samsung s24"
+
+Acessório + Item errado = "Meio Relevante > Accessories for the Keyword (acessórios para a palavra-chave) e Wrong Item (item errado)"
+
+FORMATO PARA MÚLTIPLOS MOTIVOS
+====================================
+
+Múltiplos motivos: "[CATEGORIA] > [motivo1], [motivo2], [motivo3]"
+
+Acessórios OBRIGATÓRIO: "Meio Relevante > Accessories for the Keyword (acessórios para a palavra-chave) e Wrong Item (item errado)"
+
+Exemplo: "Meio Relevante > Wrong Material (material errado), Wrong Style/Design (Estilo/design errado)"
+
+OBSERVAÇÕES PARA SKIPS
+==========================
+
+Leitura Literal da Keyword (KW): A análise deve ser feita com base na KW exatamente como ela foi digitada. A IA não deve tentar corrigir erros de digitação ou gramática.
+
+KW com Sentido Ambíguo: Se a KW se referir a dois produtos completamente diferentes e a intenção do usuário não puder ser claramente determinada, a análise deve ser pulada (Skip).
+
+Exemplo de Ambiguidades para Skip: A KW "calda preta" pode se referir a uma calça de moletom preta ou a uma calda de bolo preta. A intenção é incerta, então deve-se dar Skip.
+
+KW com Erro de Digitação Compreensível: Se a KW contiver erros de digitação, mas o sentido for claramente identificável e se referir a um único produto, a IA deve prosseguir com a análise normal.
+
+Exemplo de Erro de Digitação Compreensível: A KW "calda de moleton sem bolso" tem um erro de digitação ("calda" em vez de "calça"), mas a intenção do usuário é claramente a de encontrar uma calça de moletom, portanto, não é um caso de Skip.
+
+================================================================ ESTAS SÃO AS REGRAS DE ANÁLISE QUE A IA DEVE SEGUIR PARA AVALIAR E RESPONDER PERGUNTAS SOBRE MARCAÇÃO DE ITENS NA SHOPEE.
